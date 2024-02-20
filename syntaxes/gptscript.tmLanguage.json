@@ -10,15 +10,18 @@
 		"tool": {
 			"patterns": [
 				{
-					"include": "#header"
+					"include": "#preamble"
 				},
 				{
 					"include": "#body"
 				}
 			]
 		},
-		"header": {
+		"preamble": {
 			"patterns": [
+				{
+					"include": "#comment"
+				},
 				{
 					"include": "#name"
 				},
@@ -48,6 +51,14 @@
 				}
 			]
 		},
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.gptscript",
+					"match": "^#\\s+.*"
+				}
+			]
+		},
 		"name": {
 			"patterns": [
 				{
@@ -61,7 +72,6 @@
 						}
 					}
 				}
-				
 			]
 		},
 		"tools": {
