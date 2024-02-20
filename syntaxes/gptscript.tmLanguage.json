@@ -213,7 +213,7 @@
 							"name": "keyword.parameter.gptscript"
 						},
 						"3": {
-							"name": "string"
+							"name": "string.unquoted"
 						}
 					}
 				}
@@ -222,7 +222,7 @@
 		"body": {
 			"patterns": [
 				{
-					"name": "string",
+					"name": "markup",
 					"begin": ".+",
 					"end": "---(-)?"
 				}
